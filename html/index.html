@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example</title>
+</head>
+<body>
+<div id="wrapper"></div>
+<button id="btn">Click me</button>
+<script type="text/javascript">
+
+var a = 25;
+
+function foo() {
+  console.log(this.a);
+}
+
+  var btn = document.getElementById('btn');
+  btn.addEventListener('click', foo);
+
+</script>
+</body>
+</html>
